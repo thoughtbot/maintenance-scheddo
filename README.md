@@ -1,9 +1,10 @@
-You look great in Suspenders
-============================
+Custom Maintenance Page for sched.do
+====================================
 
-Use the following guides for getting things done, programming well, and
-programming in style.
+Page available at http://maintenance-scheddo.herokuapp.com/index.html
 
-* [Protocol](http://github.com/thoughtbot/guides/blob/master/protocol)
-* [Best Practices](http://github.com/thoughtbot/guides/blob/master/best-practices)
-* [Style](http://github.com/thoughtbot/guides/blob/master/style)
+Set custom maintenance page using:
+```
+% heroku config:add MAINTENANCE_PAGE_URL=http://example.com/index.html
+% heroku maintenance:on
+```
